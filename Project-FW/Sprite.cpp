@@ -189,6 +189,11 @@ D3DXVECTOR3 CSprite::GetPosition()
 	return m_Position ;
 }
 
+D3DXIMAGE_INFO CSprite::GetTexInfo()
+{
+	return *m_pTexInfo ;
+}
+
 void CSprite::Render()
 {
 	const LPDIRECT3DDEVICE9 pd3dDevice = g_D3dDevice->GetDevice() ;

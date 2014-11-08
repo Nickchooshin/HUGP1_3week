@@ -42,6 +42,73 @@
       <Filter>Scene</Filter>
     </ClCompile>
     <ClCompile Include="SampleScene.cpp" />
+    <ClCompile Include="Objects.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MapManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderBox.cpp">
+      <Filter>Objects\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Objects\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Dust.cpp">
+      <Filter>Objects\MapObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="MapObjects.cpp">
+      <Filter>Objects\MapObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="MapObjectsTopBottom.cpp">
+      <Filter>Objects\MapObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Virus.cpp">
+      <Filter>Objects\MapObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="LifeUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Button</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="TutorialScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="DeveloperScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClearScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="LogManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton.h" />
@@ -91,6 +158,74 @@
       <Filter>Scene</Filter>
     </ClInclude>
     <ClInclude Include="SampleScene.h" />
+    <ClInclude Include="Objects.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MapManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Objects\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderBox.h">
+      <Filter>Objects\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Dust.h">
+      <Filter>Objects\MapObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="MapObjects.h">
+      <Filter>Objects\MapObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="MapObjectsTopBottom.h">
+      <Filter>Objects\MapObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Virus.h">
+      <Filter>Objects\MapObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="NumberUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="LifeUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Button</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="TutorialScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="DeveloperScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClearScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="LogManager.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Input">
@@ -120,5 +255,29 @@
     <Filter Include="Scene">
       <UniqueIdentifier>{09e25e2d-2eaa-43b0-b1ef-6b3f56621ca4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{b4197cc3-4afa-43d7-9447-1b1269b0364e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{9b0641c9-815d-4319-b0aa-cdd2da57081a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Collider">
+      <UniqueIdentifier>{deb6b095-59cd-4247-a377-77a406906f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\MapObjects">
+      <UniqueIdentifier>{d94c0b0f-64a0-414b-9609-8eba78bb8e77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{f359457a-7f8f-49d0-80f7-c3210de327cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Button">
+      <UniqueIdentifier>{1cd012bc-b4ef-4a29-9539-08616eae589d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Project-FW.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Icon.ico" />
   </ItemGroup>
 </Project>

@@ -2,6 +2,11 @@
 #include "D3dSystem.h"
 #include "SceneManager.h"
 #include "D3dDevice.h"
+#include "Mouse.h"
+
+#include "resource.h"
+
+#include <time.h>
 
 #ifdef _DEBUG
 #pragma comment(linker, "/entry:WinMainCRTStartup /subsystem:console")
@@ -12,6 +17,7 @@ CWinSystem::CWinSystem(HINSTANCE hInst) : m_hInst(hInst),
 										  t(0.0f),
 										  dwOldTime(0)
 {
+	srand(time(NULL)) ;
 }
 CWinSystem::~CWinSystem()
 {
@@ -25,7 +31,7 @@ void CWinSystem::WinSet(LPCTSTR TitleName, DWORD WinStyle, int WinWidth, int Win
 	m_wc.cbClsExtra = 0L ;
 	m_wc.cbWndExtra = 0L ;
 	m_wc.hInstance = m_hInst ;
-	m_wc.hIcon = NULL ;
+	m_wc.hIcon = LoadIcon(m_hInst, MAKEINTRESOURCE(IDI_ICON1)) ;
 	m_wc.hCursor = LoadCursor(NULL, IDC_ARROW) ;
 	m_wc.hbrBackground = NULL ;
 	m_wc.lpszMenuName = NULL ;
@@ -161,8 +167,23 @@ LRESULT WINAPI MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	case WM_DESTROY :
 		//	Cleanup();
 		PostQuitMessage( 0 ) ;
-		return 0 ;
+		break ;
+
+	case WM_MOUSEMOVE:
+		//mouse.x = LOWORD(lParam) ;
+		//mouse.y = HIWORD(lParam) ;
+		//g_InputManager->SetMousePoint(mouse) ;
+		g_Mouse->SetMousePoint(LOWORD(lParam), HIWORD(lParam)) ;
+
+	/*case WM_SETCURSOR:
+		//SetCursor(NULL) ;
+		//g_D3dDevice->GetD3dDevice()->ShowCursor(true) ;
+		break ;*/
+
+	default :
+		return DefWindowProc(hWnd, msg, wParam, lParam) ;
 	}
 
-	return DefWindowProc(hWnd, msg, wParam, lParam) ;
+	//return DefWindowProc(hWnd, msg, wParam, lParam) ;
+	return 0 ;
 }

@@ -24,6 +24,8 @@ public :
 	inline const float GetTime() { return Time ; }
 	inline const float GetMoveTime() { return Time * Frame ; }
 
+	inline LPDIRECT3DDEVICE9 GetD3dDevice() { return g_pd3dDevice ; }
+
 	friend class CD3dSystem ;
 	friend class CWinSystem ;
 } ;
